@@ -1,0 +1,66 @@
+@import 'variables';
+
+.hero {
+ background-color: $neutral-silver;
+
+ &-container {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 96px 0 96px 0;
+ }
+
+ &-content {
+  width: 100%;
+  max-width: 657px;
+ }
+
+ &-image {
+  img {
+   width: 391px;
+  }
+ }
+
+ &-heading {
+  font-size: 60px;
+
+  span {
+   color: $primary;
+  }
+ }
+
+ &-desc {
+  padding: 16px 0 48px 0;
+ }
+
+ &-register {
+  height: 52px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 32px 14px 32px;
+ }
+
+ .slick-dots {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 8px;
+  padding-bottom: 16px;
+
+  button {
+   font-size: 0;
+   background-color: $color-tint-3;
+   width: 10px;
+   height: 10px;
+   border-radius: 100rem;
+   border: none;
+   transition: all 0.2s linear;
+   vertical-align: middle;
+  }
+
+  .slick-active button {
+   background-color: $primary;
+  }
+ }
+}

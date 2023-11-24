@@ -1,0 +1,1 @@
+Source: https://www.figma.com/file/7u74ZsrGFpwIoiqbQIax8E/Training_LandingPage_01?type=design&node-id=1-2&mode=design

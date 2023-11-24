@@ -1,0 +1,64 @@
+:root {
+  --primary: #4CAF4F;
+  --secondary: #263238;
+  --info: #2194F3;
+  --neutral-black: #263238;
+  --neutral-d_grey: #4D4D4D;
+  --neutral-grey: #717171;
+  --neutral-l_grey: #89939E;
+  --neutral-grey-blue: #ABBED1;
+  --neutral-silver: #F5F7FA;
+  --neutral-white: #FFFFFF;
+  --color-shade-1: #43A046;
+  --color-shade-2: #388E3B;
+  --color-shade-3: #237D31;
+  --color-shade-4: #1B5E1F;
+  --color-shade-5: #103E13;
+  --color-tint-1: #66BB69;
+  --color-tint-2: #81C784;
+  --color-tint-3: #A5D6A7;
+  --color-tint-4: #C8E6C9;
+  --color-tint-5: #E8F5E9;
+  --action-warning: #FBC02D;
+  --action-error: #E53835;
+  --action-success: #2E7D31;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*Button Style*/
+.btn {
+  height: 52px;
+  min-width: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px 14px 32px;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  color: var(--neutral-white);
+  background-color: var(--primary);
+}
+
+.btn:hover {
+  border: 1px solid var(--neutral-d_grey);
+}
+
+.btn:active {
+  border: 1px solid var(--color-shade-2);
+  background-color: var(--color-shade-2);
+}
+
+.btn:disabled {
+  border: 1px solid var(--neutral-silver);
+  background-color: var(--neutral-silver);
+  color: var(--neutral-grey-blue);
+  cursor: unset;
+}

@@ -1,0 +1,39 @@
+/*Header*/
+.header {
+  height: 84px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-nav__item a{
+  text-decoration: none;
+  color: var(--neutral-d_grey)
+}
+/*end Header*/
+
+/*Banner*/
+.banner {
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,61 @@
+@import 'variables';
+
+.header {
+ background-color: $neutral-silver;
+
+ &-logo {
+  width: 154px;
+  img {
+   width: 100%
+  }
+ }
+
+ &-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+ }
+
+ &-nav {
+  display: flex;
+  gap: 0 24px;
+
+  &__list {
+   display: flex;
+   align-items: center;
+   gap: 0 50px;
+  }
+
+  &__item a{
+   text-decoration: none;
+   color: var(--neutral-d_grey)
+  }
+ }
+
+ &-auth {
+  display: flex;
+  align-items: center;
+  gap: 14px
+ }
+
+ &-login {
+  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  height: 40px;
+  background-color: $neutral-silver;
+ }
+
+ &-signup {
+  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  height: 40px;
+ }
+}
+

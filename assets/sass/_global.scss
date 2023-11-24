@@ -1,0 +1,111 @@
+@import "variables";
+
+body {
+ line-height: 1;
+ font-family: $font;
+ color: $neutral-grey;
+ font-size: 16px;
+}
+
+.wrapper {
+ max-width: 1440px;
+ margin: 0 auto;
+}
+
+.container {
+ max-width: 1170px;
+ margin: 0 auto;
+}
+
+.btn {
+ height: 56px;
+ min-width: 91px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 16px 32px 16px 32px;
+ gap: 10px;
+ font-size: 18px;
+ font-weight: 400;
+ border-radius: 4px;
+ border: none;
+ outline: none;
+}
+
+.btn--primary {
+ color: $neutral-white;
+ background-color: $primary;
+
+ &:focus {
+  border: 2px solid $neutral-d_grey;;
+ }
+
+ &:active {
+  background-color: $color-shade-2;
+  border: none;
+ }
+
+ &:disabled {
+  background-color: $neutral-silver;
+  color: $neutral-grey-blue;
+  cursor: unset;
+ }
+}
+
+.btn--secondary {
+ border: 1px solid $primary;
+ color: $primary;
+ background-color: $neutral-white;
+
+ &:hover{
+  background-color: $neutral-silver;
+ }
+
+ &:focus{
+  background-color: $neutral-silver;
+  border: 2px solid $neutral-l_grey;
+ }
+
+ &:active {
+  border: none;
+  color: $primary;
+  background-color: $neutral-silver;
+ }
+
+ &:disabled {
+  border: none ;
+  background-color: $neutral-silver;
+  color: $neutral-grey-blue;
+  cursor: unset;
+ }
+}
+
+.btn--tertiary {
+ color: $primary;
+ background-color: $neutral-white;
+
+ &:hover{
+  background-color: $neutral-silver;
+ }
+
+ &:focus{
+  background-color: $neutral-white;
+  border: 2px solid $neutral-l_grey;
+ }
+
+ &:active {
+  color: $primary;
+  background-color: $color-tint-5;
+  border:none;
+ }
+
+ &:disabled {
+  background-color: $neutral-silver;
+  color: $neutral-grey-blue;
+  cursor: unset;
+ }
+}
+
+h1, h2, h3, h4, h5, h6 {
+ color: $neutral-d_grey;
+}
